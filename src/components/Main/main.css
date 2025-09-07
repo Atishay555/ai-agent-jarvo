@@ -1,0 +1,168 @@
+.main{
+  flex: 1;
+  min-height: 100vh;
+  padding-bottom: 15vh;
+  position: relative;
+
+}
+ .nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  padding: 20px;
+  color: #585858;
+}
+
+ .nav img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.main-container{
+  max-width: 900px ;
+  margin: auto;
+}
+.greet{
+  margin : 50px 0px;
+  font-size: 56px;
+  color: #c4c7c5;
+  font-weight: 500;
+  padding: 20px;
+}
+.greet span {
+  background: -webkit-linear-gradient(50deg , #4b90ff,#ff5546,#d6ab0f);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.card{
+  height: 200px;
+  padding: 15px;
+  background-color: #f0f4f9;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.card img{
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  bottom: 10px;
+  right: 10px;
+}
+.card p {
+  color: #585858;
+  font-size: 17px;
+}
+.card:hover{
+  background-color: #dfe4ea;
+
+}
+.main-bottom{
+  position: absolute;
+  width: 100%;
+  max-width: 900px;
+  padding: 0px 20px;
+  margin: auto;
+  bottom: 0px;
+}
+.search-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f0f4f9;
+  gap: 20px;
+  border-radius: 50px;
+}
+.search-box img{
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+}
+.search-box input{
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 18px;
+}
+.search-box  div{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.bottom-info{
+  font-size: 13px;
+  margin: 15px auto;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+.question{
+  display: flex;
+  font-size: 16px;
+  align-items: flex-start;
+  margin: 40px 0px;
+  gap: 20px;
+
+}
+.question img {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  align-items: start;
+}
+.result-font{
+      font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+
+}
+
+.loader{
+  display: flex;
+  justify-content: start;
+  font-size: 16px;
+  align-items: center;
+  margin: 40px 0px;
+  gap: 20px;
+
+}
+.loader img {
+  height: 40px;
+  width : 40px;
+}
+
+.loader hr {
+  border: none;
+  border-radius: 10px;
+  height: 12px;
+  width: 200px;
+  background: linear-gradient(270deg, #00c9ff, #92fe9d, #f9f871);
+  background-size: 600% 600%;
+  animation: loader 3s ease infinite;
+}
+@keyframes loader {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
