@@ -10,7 +10,7 @@ import compass from './compass.png'
 import angle from './angle.png'
 import send from './arrow.svg'
 import mic from './mic.svg'
-import add_img from './card-image.svg'
+import search_web from './browser-web.svg'
 import gemini from'./Gemini-Icon.png.webp'
 
 
@@ -30,6 +30,6 @@ export const assests = {
   angle,
   mic,
   send,
-  add_img,
+  search_web,
   gemini
 }

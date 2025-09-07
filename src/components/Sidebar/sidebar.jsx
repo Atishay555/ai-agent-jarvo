@@ -11,7 +11,7 @@ const SideBar = ()=>{
   return <div className="Sidebar">
     <div className="top">
       <img onClick={()=>setExtended(extended=>!extended)} src= {assests.hamburger} alt="" className="menue" />
-      <div className="new-chat">
+      <div className="new-chat"   onClick={() => window.location.reload()}>
         <img src={assests.plus} alt="" />
         {extended ? <p>New Chat</p> : null}
       </div>
@@ -36,7 +36,7 @@ const SideBar = ()=>{
 
 
     </div>
-    <div className="bottom">
+    {/* <div className="bottom">
       <div className="bottom-item recent-entry">
         <img src={assests.help} alt="" />
         {extended ? <p>Help</p> : null}
@@ -50,7 +50,7 @@ const SideBar = ()=>{
         {extended ? <p>Setting</p> : null}
 
       </div>
-    </div>
+    </div> */}
   </div>
   
   
